@@ -152,6 +152,11 @@ address {
 .hero {
     background-color: var(--secondary-bg-color);
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/herobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -189,6 +194,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--accent-bg-btn);
+    outline: transparent;
 }
 .futers-section{
     padding-bottom: 0;
@@ -288,9 +294,10 @@ height: 44px;
     color: #AFB1B8;
 }
 .team-soc-link:hover,
-.team-soc-linkk:focus{
+.team-soc-link:focus{
     background-color: #2196F3;
     color:#FFFFFF;
+    outline: transparent;
 }
 .team-soc-icon {
     fill: currentColor;
@@ -317,6 +324,7 @@ color:#AFB1B8;
 .customers-link:focus{
     border-color: #2196F3;
     color: #2196F3;
+    outline: transparent;
 }
 .customers-icon {
     fill: currentColor;
@@ -397,6 +405,7 @@ height: 44px;
 .footer-soc-link:hover,
 .footer-soc-link:focus{
     background-color: #2196F3;
+    outline: transparent;
 }
 
 .footer-soc-icon {
@@ -433,6 +442,7 @@ height: 44px;
 .portfolio-btn:focus {
     background-color: var(--accent-text-color);
     color: var(--light-text-color);
+    outline: transparent;
 }
 .card-list {
     display: flex;
@@ -440,6 +450,14 @@ height: 44px;
     gap: 30px;
 }
 .card-link {
+    display: block;
+
+}
+.card-link:hover,
+.card-link:focus{
+    outline: transparent;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 .cart-text-wrap{
     padding: 20px 24px;
@@ -461,6 +479,7 @@ height: 44px;
     line-height: 2;
     /* 200% */
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .card-text {
